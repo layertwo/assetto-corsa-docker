@@ -1,4 +1,4 @@
-FROM ubuntu:14.04
+FROM ubuntu:22.04
 MAINTAINER Germán Robledo <germix@germix.net>
 
 ENV DEBIAN_FRONTEND=noninteractive
