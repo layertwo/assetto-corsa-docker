@@ -20,7 +20,6 @@
 
 This will install, config (for the first time only) and run:
 - [Assetto Corsa Dedicated Server](https://steamdb.info/app/302550/)
-- [stracker](http://www.n-e-y-s.de/main)
 
 For a list of complete parameters, see below.
 
@@ -41,8 +40,6 @@ Recommendation is to create a new Steam account since the app is free and availa
 * `-p 8081:8081` Default Assetto Corsa HTTP port. **Mandatory**. Change it if `AC_HTTP_PORT` is different.
 * `-p 9600:9600` Default Assetto Corsa TCP port. **Mandatory**. Change it if `AC_TCP_PORT` is different.
 * `-p 9600:9600/udp` Default Assetto Corsa UDP port. **Mandatory**. Change it if `AC_UDP_PORT` is different.
-* `-p 50041:50041` Default stracker HTTP port. **Mandatory**. Change it if `ST_HTTP_PORT` is different.
-* `-p 50042:50042` Default ptracker port. **Mandatory**. Change it if `ST_PTRACKER_PORT` is different.
 
 * `-v </path/to/install_dir>:/steamapps` - Base install path. **Mandatory**. A folder called `assetto` (or the one specified in `AC_FOLDER`) will be created under this volume.
 
@@ -58,14 +55,6 @@ Recommendation is to create a new Steam account since the app is free and availa
 * `-e AC_HTTP_PORT`. Defaults to `8081`.
 * `-e AC_PLUGIN_LOCAL_PORT`. Defaults to `10001`.
 * `-e AC_PLUGIN_ADDRESS_LOCAL_PORT`. Defaults to `10002`.
-
-
-#### stracker
-
-* `-e ST_USERNAME` to set password for the stracker admin pages.
-* `-e ST_PASSWORD` to set the username for the stracker admin pages.
-* `-e ST_HTTP_PORT` to change the port of stracker. Defaults to `50041`.
-* `-e ST_SERVER_NAME` for tagging sessions in stracker. Defaults to `acserver`.
 
 ### User / Group identifiers
 
